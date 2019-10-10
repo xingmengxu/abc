@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>八卦图</title>
+	<style>
+		div {
+			width: 250px;
+			height: 500px;
+			background: #000;
+			border-right: 250px solid #fff;
+			border-radius: 50%;
+			 position: absolute; 
+			 box-shadow: 0 0 25px;
+
+		}
+		 div::before { 
+			content: "";
+			background: #fff;
+			width: 90px;
+			height: 90px;
+			border: 80px solid #000;
+			border-radius: 100%;
+			 position: absolute; 
+			left: 50%;
+			top: 0;
+			
+		}
+		div::after { 
+			content: "";
+			background: #000;
+			width: 90px;
+			height: 90px;
+			border: 80px solid #fff;
+			border-radius: 100%;
+			position: absolute;
+			right: -50%;
+			bottom: 0;
+
+		}
+	</style>
+</head>
+<body>
+	<div></div>
+</body>
+</html>
